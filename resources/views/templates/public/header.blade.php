@@ -1,0 +1,27 @@
+<?php 
+	$url_public = getenv("PUBLIC_URL");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{{$title}}</title>
+<meta name="description" content="Thiet ke website, dao tap lap trinh">
+<meta name="keywords" content="hiet ke website, dao tap lap trinh">
+<link href="{{$url_public}}/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main">
+		<div class="page">
+			<div class="header">
+				<div class="header-img">
+					<img src="{{$url_public}}/images/header.jpg" alt="" width="800">
+				</div>
+				<div class="topmenu">
+					<ul>
+						<li><a href="{{route('public.index.index')}}">Trang chủ</a></li>
+						<li><a href="{{route('public.news.news')}}">Tin tức</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
